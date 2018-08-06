@@ -21,7 +21,7 @@ export default {
     name: 'login',
     metaInfo: {
         title: 'login',
-        titleTemplate: '%s - stutter',
+        titleTemplate: '%s - Stutter',
     },
     async asyncData({store, route}) {
         setState(store);
