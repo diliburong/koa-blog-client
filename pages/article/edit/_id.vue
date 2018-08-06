@@ -74,7 +74,7 @@ export default {
   },
   metaInfo: {
     title: 'article',
-    titleTemplate: '%s - Lavas',
+    titleTemplate: '%s - Stutter',
   },
   async asyncData({store, route}) {
     await store.dispatch('articles/setArticleDetail', {id: route.params.id})

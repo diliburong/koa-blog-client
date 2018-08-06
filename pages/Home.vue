@@ -1,6 +1,6 @@
 <template>
     <div class="page-index">
-        <h2>LAVAS</h2>
+        <h2>Stutter</h2>
         <add-article></add-article>
     </div>
 </template>
@@ -12,7 +12,7 @@ export default {
     name: 'home',
     metaInfo: {
         title: 'home',
-        titleTemplate: '%s - Lavas',
+        titleTemplate: '%s - Stutter',
     },
     async asyncData({store, route}) {
         setState(store);

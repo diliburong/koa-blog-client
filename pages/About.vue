@@ -36,7 +36,7 @@ export default {
     name: 'about',
     metaInfo: {
         title: 'about',
-        titleTemplate: '%s - Lavas',
+        titleTemplate: '%s - Stutter',
     },
     async asyncData({store, route}) {
         // setState(store);

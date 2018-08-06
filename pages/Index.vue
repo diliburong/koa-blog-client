@@ -44,10 +44,10 @@ export default {
     name: 'index',
     metaInfo: {
         title: 'article',
-        titleTemplate: '%s - Lavas',
+        titleTemplate: '%s - Stutter',
         meta: [
-            {name: 'keywords', content: 'lavas PWA'},
-            {name: 'description', content: '基于 Vue 的 PWA 解决方案，帮助开发者快速搭建 PWA 应用，解决接入 PWA 的各种问题'}
+            {name: 'keywords', content: 'blog 博客'},
+            {name: 'description', content: 'stutter的博客'}
         ]
     },
     async asyncData({store, route}) {
