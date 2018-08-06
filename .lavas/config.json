@@ -1,0 +1,37 @@
+{
+    "buildVersion": 1533573629200,
+    "build": {
+        "ssr": false,
+        "publicPath": "/",
+        "compress": true,
+        "cssExtract": true
+    },
+    "middleware": {
+        "all": [],
+        "server": [],
+        "client": [
+            "my-first-middleware",
+            "is-online"
+        ]
+    },
+    "router": {
+        "mode": "history",
+        "base": "/",
+        "pageTransition": {
+            "type": "fade",
+            "transitionClass": "fade"
+        }
+    },
+    "errorHandler": {
+        "defaultErrorMessage": "Internal Server Error",
+        "showRealErrorMessage": false,
+        "errorPath": "/error"
+    },
+    "serviceWorker": {
+        "swDest": "H:\\webproject\\lavas\\koa-blog-client\\dist\\service-worker.js"
+    },
+    "skeleton": {
+        "enable": true,
+        "asyncCSS": true
+    }
+}
