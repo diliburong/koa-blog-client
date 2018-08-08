@@ -1,6 +1,6 @@
-# *__name__*
+# *__Stutter Blog__*
 
-> *__desc__*
+> *__My persional blog __*
 
 ## npm 相关命令
 
@@ -20,10 +20,15 @@ npm run start
 # 检查代码是否符合规范
 npm run lint
 ```
+当在服务器使用nginx部署时，如果路由模式为`history`需要在配置中加入以下配置。
+```nginx
+location / {
+    try_files $uri $uri/ /index.html;
+}
+```
 
-Lavas 工程模版基于 [vue-template-vue](https://github.com/lavas-project/lavas-template-vue/) 模版的 `release-*` 分支创建。
-如果想要了解具体如何玩转整个 Lavas 创建的 PWA 工程, 请查看[Lavas 官网教程](https://lavas.baidu.com/guide)。
+不然会在页面刷新的时候报404，具体原因是应为使用history模式时，用户直接访问或者刷新非index.html时，例如访问'/list'，web服务器会绕过index.html，去'/list'位置找相应的页面，这样就会导致404。
 
-## Changelog
+具体见[HTML5 History 模式](https://router.vuejs.org/zh/guide/essentials/history-mode.html#%E5%90%8E%E7%AB%AF%E9%85%8D%E7%BD%AE%E4%BE%8B%E5%AD%90)
 
-详细的 Changelog 请看 [Release Notes](https://github.com/lavas-project/lavas-template-vue/releases)
+
