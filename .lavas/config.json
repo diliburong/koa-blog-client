@@ -1,5 +1,5 @@
 {
-    "buildVersion": 1533573629200,
+    "buildVersion": 1533697437158,
     "build": {
         "ssr": false,
         "publicPath": "/",
@@ -28,7 +28,7 @@
         "errorPath": "/error"
     },
     "serviceWorker": {
-        "swDest": "H:\\webproject\\lavas\\koa-blog-client\\dist\\service-worker.js"
+        "swDest": "D:\\webproject\\vue\\koa-blog-client\\dist\\service-worker.js"
     },
     "skeleton": {
         "enable": true,

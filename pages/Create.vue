@@ -111,7 +111,6 @@ export default {
 
   methods: {
     init() {
-      console.log(this.categories[0])
       this.categoryId = this.categories[0]._id
     },
 
@@ -132,7 +131,6 @@ export default {
     },
     openList() {
       this.isCategoryClose = !this.isCategoryClose;
-      console.log(this.isCategoryClose)
     },
     async submitArticle() {
       let data = {

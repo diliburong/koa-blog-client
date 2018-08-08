@@ -136,7 +136,7 @@ export default {
     },
     openList() {
       this.isCategoryClose = !this.isCategoryClose;
-      console.log(this.isCategoryClose)
+      // console.log(this.isCategoryClose)
     },
     async submitArticle() {
       let data = {
